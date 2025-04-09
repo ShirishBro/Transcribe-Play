@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcribe & Play</title>
+    <meta name="description" content="Transcribe & Play helps you easily convert audio to text and explore fun, informative content. Discover services, FAQs, blogs, and interactive games—all in one place.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Transcribe & Play</div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#games">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Professional Transcription & Translation Services</h1>
+                <p>High quality services at affordable prices</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 7869542807 <span class="note">(Only WhatsApp messages, no calls)</span></p>
+                    <p>If you want to give us work, please contact us at <a href="mailto:shirishgup786@gmail.com">shirishgup786@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" onclick="showPricing('transcription')">
+                    <h3>Transcription</h3>
+                    <p>Convert your audio/video files to accurate text</p>
+                    <div class="pricing" id="transcription-pricing">
+                        <p>$0.40 per minute</p>
+                        <p class="note">Our pricing is low cost. Please provide your work to us.</p>
+                        <p class="note">Price may vary for larger projects.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showPricing('translation')">
+                    <h3>Translation</h3>
+                    <p>Professional translation between multiple languages</p>
+                    <div class="pricing" id="translation-pricing">
+                        <p>$0.30 per word</p>
+                        <p class="note">Our pricing is low cost. Please provide your work to us.</p>
+                        <p class="note">Price may vary for larger projects.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showPricing('proofreading')">
+                    <h3>Proofreading</h3>
+                    <p>Error-free documents with professional proofreading</p>
+                    <div class="pricing" id="proofreading-pricing">
+                        <p>$20 per document</p>
+                        <p class="note">Our pricing is low cost. Please provide your work to us.</p>
+                        <p class="note">Price may vary for larger projects.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showPricing('data-entry')">
+                    <h3>Data Entry</h3>
+                    <p>Accurate and efficient data entry services</p>
+                    <div class="pricing" id="data-entry-pricing">
+                        <p>$30 per 40 entries</p>
+                        <p class="note">Our pricing is low cost. Please provide your work to us.</p>
+                        <p class="note">Price may vary for larger projects.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card" onclick="showPricing('captioning')">
+                    <h3>Captioning</h3>
+                    <p>Professional captioning for your videos</p>
+                    <div class="pricing" id="captioning-pricing">
+                        <p>$25 per work</p>
+                        <p class="note">Our pricing is low cost. Please provide your work to us.</p>
+                        <p class="note">Price may vary for larger projects.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="service-note">If you want to know the pricing of these services then click on the service</p>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>1. Get Quote</h3>
+                    <p>Talk with our boss to know the pricing</p>
+                    <p class="highlight">Make 20% in advance</p>
+                </div>
+                <div class="step">
+                    <h3>2. Start Work</h3>
+                    <p class="highlight">For getting started work</p>
+                </div>
+                <div class="step">
+                    <h3>3. Pay Full Payment</h3>
+                    <p>When the work is done</p>
+                </div>
+                <div class="step">
+                    <h3>4. Receive Your Work</h3>
+                    <p>Get your completed work delivered</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs" class="faqs">
+            <h2>FAQs</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">Q1: What file formats do you support?</h3>
+                    <p class="faq-answer">We support Word files, PDF files, and PNG images.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Q2: How many days will the transcription take?</h3>
+                    <p class="faq-answer">Our working accuracy is 99%. We will complete your work in 2 to 3 days.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Q3: Which languages do you support for translation?</h3>
+                    <p class="faq-answer">For translation, we currently use Hindi, English, Spanish, German, French and Japanese. We will gradually expand the languages.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Q4: What is your accuracy rate for data entry?</h3>
+                    <p class="faq-answer">We maintain a 99.9% accuracy rate for all data entry work with thorough quality checks.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Q5: Do you offer bulk discounts for large projects?</h3>
+                    <p class="faq-answer">Yes, we offer special discounted rates for large volume projects. Contact us with your requirements for a customized quote.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogs" class="blogs">
+            <h2>Blogs</h2>
+            <button id="add-blog-btn" class="add-blog-btn">Add New Blog</button>
+            <div id="blog-form-container" class="blog-form-container" style="display: none;">
+                <input type="text" id="blog-title" placeholder="Blog Title">
+                <textarea id="blog-content" placeholder="Write your blog content here..."></textarea>
+                <button id="save-blog-btn">Save Blog</button>
+            </div>
+            <div id="blogs-container" class="blogs-container"></div>
+        </section>
+
+        <section id="games" class="games">
+            <h2>Games Section</h2>
+            <p>Check out our exciting games collection! Purchase to unlock full access.</p>
+            <a href="https://payhip.com/MonsterDeveloper?builder_mode=1&environment_id_encrypted=w9B3XMLDGR&show_builder_mode_previewing_notification=1" class="games-link" target="_blank">
+                Visit Our Games Store
+            </a>
+            <p class="games-note">Explore our premium games collection with amazing graphics and gameplay. Click the link above to view and purchase our games!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Transcribe & Play. All rights reserved.</p>
+        <p>Contact us at: <a href="mailto:shirishgup786@gmail.com">shirishgup786@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
